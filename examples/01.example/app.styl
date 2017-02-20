@@ -1,0 +1,52 @@
+/* preconfiguración al archivo styl*/
+width-card = 300px;
+border-radius(r)
+	-webkit-border-radius r
+	-moz-border-radius r
+	border-radius r
+/* finalizando la preconfiguración*/
+
+body
+	font-family Arial
+	font-size 16px
+
+.text-center
+	text-align center
+	margin 0 auto
+	
+.CardUser
+	width width-card
+	border 3px solid gray
+	border-radius(5px)
+	background lightgreen	
+	&-header
+		width 100%
+	&-body
+		width 100%
+		&-image
+		&-parrafo
+			width 94%
+			padding 0 3%
+		&-image
+			border-radius(15px)
+		&-parrafo
+			text-align justify
+			background white
+	&-footer
+		width 100%
+		padding 5px
+	
+
+.Card
+	width 200px
+	background yellow
+	border 5px solid gray
+	border-radius .5em
+	
+	&-description
+		background white
+		padding .5em
+		font-size 12px
+	
+	&-image
+		width 100%
