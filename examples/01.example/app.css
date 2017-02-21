@@ -1,1 +1,122 @@
-body{font-family:Arial;font-size:16px}.text-center{text-align:center;margin:0 auto}.CardUser{width:300px;border:3px solid #808080;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#90ee90;}.CardUser-header{width:100%}.CardUser-body{width:100%;}.CardUser-body-image,.CardUser-body-parrafo{width:94%;padding:0 3%}.CardUser-body-image{-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px}.CardUser-body-parrafo{text-align:justify;background:#fff}.CardUser-footer{width:100%;padding:5px}.Card{width:200px;background:#ff0;border:5px solid #808080;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;}.Card-description{background:#fff;padding:.5em;font-size:12px}.Card-image{width:100%}
+/* preconfiguración al archivo styl*/
+/* finalizando la preconfiguración*/
+body {
+  font-family: Arial;
+  font-size: 16px;
+}
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+}
+/* estilos para la estructura "Tarjeta" personal */
+.Tarjeta {
+  width: 520px;
+  border: 1px solid #808080;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.Tarjeta-top,
+.Tarjeta-bottom {
+  width: 100%;
+  overflow: hidden;
+}
+.Tarjeta-top-div,
+.Tarjeta-bottom-div {
+  width: 25%;
+  float: left;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  background: #d3d3d3;
+}
+.Tarjeta-top-div-img,
+.Tarjeta-bottom-div-img {
+  width: 30px;
+}
+.Tarjeta-body {
+  width: 100%;
+  overflow: hidden;
+}
+.Tarjeta-body-content,
+.Tarjeta-body-image {
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.Tarjeta-body-content {
+  width: 60%;
+}
+.Tarjeta-body-image {
+  width: 40%;
+}
+.esq-top-left {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.esq-top-right {
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.esq-bottom-left {
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.esq-bottom-right {
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* estilos para la estructura "CardUser" */
+.CardUser {
+  width: 300px;
+  border: 3px solid #808080;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #90ee90;
+}
+.CardUser-header {
+  width: 100%;
+}
+.CardUser-body {
+  width: 100%;
+}
+.CardUser-body-image,
+.CardUser-body-parrafo {
+  width: 94%;
+  padding: 0 3%;
+}
+.CardUser-body-image {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.CardUser-body-parrafo {
+  text-align: justify;
+  background: #fff;
+}
+.CardUser-footer {
+  width: 100%;
+  padding: 5px;
+}
+/* estilos para la estructura "Card" */
+.Card {
+  width: 200px;
+  background: #ff0;
+  border: 5px solid #808080;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+.Card-description {
+  background: #fff;
+  padding: 0.5em;
+  font-size: 12px;
+}
+.Card-image {
+  width: 100%;
+}

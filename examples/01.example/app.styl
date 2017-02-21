@@ -1,9 +1,14 @@
 /* preconfiguración al archivo styl*/
-width-card = 300px;
+width-card = 300px
 border-radius(r)
 	-webkit-border-radius r
 	-moz-border-radius r
 	border-radius r
+border-radius-esquina(esquina, r)
+	-webkit-border-{esquina}-radius r
+	-moz-border-{esquina}-radius r
+	border-{esquina}-radius r
+
 /* finalizando la preconfiguración*/
 
 body
@@ -13,7 +18,48 @@ body
 .text-center
 	text-align center
 	margin 0 auto
-	
+
+/* estilos para la estructura "Tarjeta" personal */
+.Tarjeta
+	width 520px
+	border 1px solid gray
+	border-radius(10px)
+	&-top
+	&-bottom
+		width 100%
+		overflow hidden
+		&-div
+			width 25%
+			float left
+			padding-top 14px
+			padding-bottom 10px
+			box-sizing border-box
+			background lightgray
+			&-img
+				width 30px
+	&-body
+		width 100%
+		overflow hidden
+		&-content
+		&-image
+			float left
+			box-sizing border-box
+			padding 10px
+		&-content
+			width 60%
+		&-image
+			width 40%
+
+.esq-top-left
+	border-radius-esquina(top-left, 10px)
+.esq-top-right
+	border-radius-esquina(top-right, 10px)
+.esq-bottom-left
+	border-radius-esquina(bottom-left, 10px)
+.esq-bottom-right
+	border-radius-esquina(bottom-right, 10px)
+
+/* estilos para la estructura "CardUser" */
 .CardUser
 	width width-card
 	border 3px solid gray
@@ -36,7 +82,7 @@ body
 		width 100%
 		padding 5px
 	
-
+/* estilos para la estructura "Card" */
 .Card
 	width 200px
 	background yellow
