@@ -1,0 +1,76 @@
+body{
+	margin: 0px;
+	font-family: sans-serif;
+}
+header{
+	width: 100%;
+	background-color: #4E94AB;
+}
+#check-menu{
+	display: block !important;
+	opacity: 0;
+	position: absolute;
+	margin: 0px;
+	height: 50px;
+	width: 50px;
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid white;
+}
+header label:hover{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.menu ul{
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	/*justify-content: */
+}
+.menu li{
+	/*flex-grow: 1;
+	text-align: center;*/
+	border-right: 1px solid white;
+	transition-duration: 0.2s;
+}
+.menu li:hover{
+	background-color: rgba(0, 0, 0, 0.2)
+}
+.menu ul li a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+@media (max-width: 720px) {
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background-color: #4E94AB;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.3s;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu ul li{
+		border-top: 1px solid white;
+	}	
+	#check-menu:hover{
+	cursor: pointer;
+	}
+	#check-menu:hover ~ label{
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	#check-menu:checked ~ .menu{
+		margin: 0 !important;
+	}
+}
