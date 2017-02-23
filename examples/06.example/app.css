@@ -1,0 +1,85 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #e6e6e6;
+}
+header{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.azul{
+	background-color: #528fd5;
+}
+.celeste{
+	background-color: #49D8FC;
+}
+.verde{
+	background-color: #159A03;	
+}
+.anaranjado{
+	background-color: #FF5906;
+}
+.morado{
+	background-color: #B806FF;
+}
+.rojo{
+	background-color: #FC4949;
+}
+nav{
+	position: relative;
+}
+nav ul{
+	list-style: none;
+	overflow: hidden;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px 10px;
+	transition: all 0.3s ease;
+}
+nav a:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* PRIMER NIVEL */
+nav > ul > li{
+	float: left;
+	width: 16.6666%;
+	text-align: center;
+}
+nav > ul > li:hover div{
+	display: table;
+}
+nav ul li div{
+	width: 1200px;
+	position: absolute;
+	left: 0;
+	background-color: #ccc;
+	display: none;
+	box-sizing: border-box; 	
+}
+
+/* SEGUNDO NIVEL */
+nav ul li div ul{
+	display: table-cell;
+	width: 20%;
+	border-right: 1px solid white;
+	box-sizing: border-box;
+}
+nav ul li div ul:last-child{
+	border-right: none;
+}
+nav ul li div ul .titulo{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+}
+nav ul li div ul li a{
+	padding: 8px 10px;
+}
+nav ul li div ul .titulo a:hover{
+	background: none;
+}

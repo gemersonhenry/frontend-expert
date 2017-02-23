@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 16px;
+}
+header{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+nav ul{
+	list-style: none;
+}
+nav a{
+	text-decoration: none;
+}
+/* COLORES */
+.primero{
+	background-color: #0e5061;
+}
+.segundo{
+	background-color: #5d5a2a;
+}
+.tercero{
+	background-color: #f25724;
+}
+.cuarto{
+	background-color: #174459;
+}
+.quinto{
+	background-color: #37a4d9;
+}
+
+/* CONFIGURACIÓN DE PRIMER NIVEL */
+nav > ul{
+	display: table;
+	width: 100%;
+	background-color: black;
+	position: relative;
+}
+nav > ul li a{
+	color: white;
+	display: block;
+	line-height: 2.5rem;
+	padding: 0.5rem;
+	position: relative;
+}
+nav > ul > li{
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+nav > ul > li > a span{
+	display: block;
+	background-color: #174459;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -3.3rem;
+	transition: all .3s ease;
+}
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 3.5rem;
+}
+nav > ul > li a:hover > span{
+	top: 0;
+}
+
+/* CONFIGURACIÓN DE SEGUNDO NIVEL */
+nav > ul > li > ul{
+	/*display: none;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: black;
+	overflow: hidden;
+	max-height: 0px;
+	transition: all .3s ease;
+}
+nav > ul > li:hover > ul{
+	/*display: block;*/
+	max-height: 17.7rem;
+	overflow: visible;
+}
+nav > ul > li > ul > li{
+	border-bottom: 1px solid white; 
+}
+nav > ul > li > ul > li a:hover{
+	background-color: #5da5a2;
+}
