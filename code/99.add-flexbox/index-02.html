@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css" media="screen">
+        	/* 	
+        		REGLA N° 2 :
+				Toda contenedor FLEX tiene dos EJES, el principal es horizontal
+                y el secundario es el vertical.
+        	*/
+        	section{
+        		width: 300px;
+				height: 300px;
+				border: 1px solid black;
+				margin: 0 auto;
+				display: flex;
+                /*flex-direction: row;*/ /* Esta es la configuración por defecto */
+                flex-direction: column;
+        	}
+        	.caja1{
+        		background: blue;
+        	}
+        	.caja2{
+        		background: green;
+        	}
+        	.caja3{
+        		background: pink;
+        	}
+        </style>
+    </head>
+    <body>
+        <section>
+        	<span class="caja1">
+        		Caja 1
+        	</span>
+        	<span class="caja2">
+        		Caja 2
+        	</span>
+        	<span class="caja3">
+        		Caja 3
+        	</span>
+        </section>
+    </body>
+</html>
