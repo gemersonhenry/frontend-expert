@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css" media="screen">
+        	/* 	
+        		REGLA N° 5 :
+				Los elementos dentro del contenedor se pueden alinear en el EJE PRINCIPAL
+                esto se logra con "justify-content"
+        	*/
+        	.sec-1, .sec-2, .sec-3, .sec-4, .sec-5{
+        		width: 300px;
+				height: 100px;
+				border: 1px solid black;
+				margin: 10px auto;
+				display: flex;
+        	}
+
+            .sec-1{
+                justify-content: flex-start;
+            }
+            .sec-2{
+                justify-content: flex-end;
+            }
+            .sec-3{
+                justify-content: center;
+            }
+            .sec-4{
+                justify-content: space-between;
+            }
+            .sec-5{
+                justify-content: space-around;
+                /*flex-wrap: wrap;*/
+            }
+
+        	.caja1{
+        		background: blue;
+        	}
+        	.caja2{
+        		background: green;
+        	}
+        	.caja3{
+        		background: pink;
+        	}
+        </style>
+    </head>
+    <body>
+        <section class="sec-1">
+        	<span class="caja1">
+        		Caja-1
+        	</span>
+        	<span class="caja2">
+        		Caja-2
+        	</span>
+        	<span class="caja3">
+        		Caja-3
+        	</span>
+        </section>
+        <section class="sec-2">
+            <span class="caja1">
+                Caja-1
+            </span>
+            <span class="caja2">
+                Caja-2
+            </span>
+            <span class="caja3">
+                Caja-3
+            </span>
+        </section>
+        <section class="sec-3">
+            <span class="caja1">
+                Caja-1
+            </span>
+            <span class="caja2">
+                Caja-2
+            </span>
+            <span class="caja3">
+                Caja-3
+            </span>
+        </section>
+        <section class="sec-4">
+            <span class="caja1">
+                Caja-1
+            </span>
+            <span class="caja2">
+                Caja-2
+            </span>
+            <span class="caja3">
+                Caja-3
+            </span>
+        </section>
+        <section class="sec-5">
+            <span class="caja1">
+                Caja-1
+            </span>
+            <span class="caja2">
+                Caja-2
+            </span>
+            <span class="caja3">
+                Caja-3
+            </span>
+            <!-- <span class="caja1">
+                Caja-1
+            </span>
+            <span class="caja2">
+                Caja-2
+            </span>
+            <span class="caja3">
+                Caja-3
+            </span>
+            <span class="caja1">
+                Caja-1
+            </span>
+            <span class="caja2">
+                Caja-2
+            </span>
+            <span class="caja3">
+                Caja-3
+            </span> -->
+        </section>
+    </body>
+</html>
