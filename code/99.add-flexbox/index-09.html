@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css" media="screen">
+        	/* 	
+        		REGLA N° 9 :
+				Podemos modificar el tamaño de los elementos dentro del contenedor FLEX
+                con las propiedades "flex-grow", "flex-shrink", "flex-basis"
+
+                flex-grow: define el tamaño que crecerá un hijo, en relación a sus demas
+                hermanos, cuando aún hay espacio disponible (su valor por defecto es 0).
+
+                flex-shrink: define el tamaño de reducción de un hijo en relación a sus 
+                demás hermanos, cuando falte espacio en el contenedor (su valor por
+                defecto es 1).
+
+                flex-basis: define el tamaño inicial del hijo (Su valor por defecto es "auto")
+                con esta propiedad reemplazamos el atributo "width"
+            */
+        	section{
+        		width: 500px;
+				height: 200px;
+				border: 1px solid black;
+				margin: 10px auto;
+				display: flex;
+        	}
+            /*article{
+                flex-grow: 1;
+            }*/
+            article{
+                flex-grow: 1;
+                flex-basis: 0;
+            }
+            .caja1{
+        		background: blue;
+                /*align-self: flex-start;*/
+        	}
+        	.caja2{
+        		background: green;
+        	}
+        	.caja3{
+        		background: pink;
+                /*align-self: flex-end;*/
+        	}
+        </style>
+    </head>
+    <body>
+        <section>
+        	<article class="caja1">
+        		Caja-1: Hola Mundo !!!
+        	</article>
+        	<article class="caja2">
+        		Caja-2
+        	</article>
+        	<article class="caja3">
+        		Caja-3
+        	</article>
+        </section>
+    </body>
+</html>

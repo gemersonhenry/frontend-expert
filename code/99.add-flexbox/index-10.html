@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css" media="screen">
+        	/* 	
+        		REGLA N° 10 :
+				Podemos resumir el conjunto de atributos "flex-grow", "flex-shrink",
+                "flex-basis" simplemente colocando "flex"
+
+                Ejemplo:
+                flex: "flex-grow" "flex-shrink" "flex-basis";
+                normalmente --> flex: 1 1 0;
+
+                flex: 1; --> esto significa flex: 1 1 0; pero hay problemas con IE10
+            */
+        	section{
+        		width: 500px;
+				height: 200px;
+				border: 1px solid black;
+				margin: 10px auto;
+				display: flex;
+        	}
+            article{
+                flex: 1 1 0;
+            }
+            .caja1{
+        		background: blue;
+                /*align-self: flex-start;*/
+        	}
+        	.caja2{
+        		background: green;
+        	}
+        	.caja3{
+        		background: pink;
+                /*align-self: flex-end;*/
+        	}
+        </style>
+    </head>
+    <body>
+        <section>
+        	<article class="caja1">
+        		Caja-1: Hola Mundo !!!
+        	</article>
+        	<article class="caja2">
+        		Caja-2
+        	</article>
+        	<article class="caja3">
+        		Caja-3
+        	</article>
+        </section>
+    </body>
+</html>
