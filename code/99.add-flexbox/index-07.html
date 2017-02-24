@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css" media="screen">
+        	/* 	
+        		REGLA N° 7 :
+				Los elementos contenidos en el contenedor FLEX se pueden acomodar
+                de manera independiente con el atributo "align-self"
+        	*/
+        	section{
+        		width: 300px;
+				height: 100px;
+				border: 1px solid black;
+				margin: 10px auto;
+				display: flex;
+                justify-content: flex-end; /* modificando el eje principal */
+                align-items: center; /* modificando el eje secundario */
+        	}
+
+            .caja1{
+        		background: blue;
+                align-self: flex-start;
+        	}
+        	.caja2{
+        		background: green;
+        	}
+        	.caja3{
+        		background: pink;
+                align-self: flex-end;
+        	}
+        </style>
+    </head>
+    <body>
+        <section>
+        	<article class="caja1">
+        		Caja-1
+        	</article>
+        	<article class="caja2">
+        		Caja-2
+        	</article>
+        	<article class="caja3">
+        		Caja-3
+        	</article>
+        </section>
+    </body>
+</html>
