@@ -1,0 +1,18 @@
+@import "../atoms/product-buttom/buttom.styl"
+@import "../atoms/product-description/description.styl"
+@import "../atoms/product-image/image.styl"
+@import "../atoms/product-price/price.styl"
+@import "../atoms/product-title/title.styl"
+$width-product-card = 400px
+$padding-card = 20px
+
+.product-card
+  width $width-product-card
+  border 1px solid blue
+  product-image($width-product-card, $padding-card)
+  product-title($width-product-card, $padding-card)
+  product-description($width-product-card, $padding-card)
+  product-price($width-product-card, $padding-card)
+  .content-product-buttom
+    padding $padding-card
+    product-buttom(red, white)

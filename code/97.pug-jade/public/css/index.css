@@ -1,0 +1,42 @@
+.product-card {
+  width: 400px;
+  border: 1px solid #00f;
+}
+.product-card span.product-image {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 10px 20px;
+}
+.product-card span.product-image img {
+  width: 100%;
+}
+.product-card .product-title {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: bold;
+  padding: 20px;
+}
+.product-card .product-description {
+  box-sizing: border-box;
+  width: 100%;
+  color: #808080;
+  padding: 20px;
+}
+.product-card .product-price {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: bold;
+  color: #00f;
+  padding: 20px;
+}
+.product-card .content-product-buttom {
+  padding: 20px;
+}
+.product-card .content-product-buttom .js-product-title {
+  margin: 3px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #f00;
+  padding: 8px 16px;
+}

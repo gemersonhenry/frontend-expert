@@ -1,0 +1,12 @@
+include ../atoms/product-buttom/buttom.jade
+include ../atoms/product-description/description.jade
+include ../atoms/product-image/image.jade
+include ../atoms/product-price/price.jade
+include ../atoms/product-title/title.jade
+
+section.product-card
+  +product-image('../images/bicicleta.jpg', 'BICICLETA')
+  +product-title('Bicicleta último modelo')
+  +product-description('Bicicleta importada recien llegada desde el extrangero')
+  +product-price('850.00')
+  +product-buttom('Add to Cart')
