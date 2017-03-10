@@ -1,4 +1,9 @@
 - var numbers_of_users = 10
+- var user_texts = ['Gemerson Henry', 'FRONT END DEVELOPER', 'PERÚ']
+- var user_link = "HOME"
+include atoms/card-user-image.jade
+include atoms/card-user-text.jade
+include atoms/card-user-link.jade
 
 doctype
 html(lang='en')
@@ -10,10 +15,9 @@ html(lang='en')
     section.card-users
       - for (var i = 0; i < numbers_of_users; i++)
         article.card-user
-          div.card-user-top
-            div.card-user-image
-          div.card-user-content
-            span.card-user-nombre Gemerson Henry
-            span.card-user-job FRONT END DEVELOPER
-            span.card-user-country PERÚ
-            span.card-user-home HOME
+          .card-user-top            
+            +card-user-image("../images/foto_personal_cuadrada.jpg", "Personal")            
+          .card-user-content
+            - for (var j = 0; j < user_texts.length; j++) 
+              +card-user-text(user_texts[j])
+            +card-user-link(user_link)
