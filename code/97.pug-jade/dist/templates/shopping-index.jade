@@ -1,1 +1,11 @@
-include organisms/molecules/product-card/product-card.jade
+include organisms/product-list/product-list.jade
+include organisms/special-list/special-list.jade
+- var num_articles = 12
+- var prices = [180, 600, 840, 100, 200, 60, 89, 15, 666, 456, 500, 798]
+
+section.content-shopping
+  .content-center
+    +product-banner("../images/front-tienda.png", "TIENDA")
+    +panel-product-list(prices, num_articles)
+  .content-right
+    

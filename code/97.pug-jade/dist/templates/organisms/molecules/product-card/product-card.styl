@@ -3,16 +3,19 @@
 @import "../atoms/product-image/image.styl"
 @import "../atoms/product-price/price.styl"
 @import "../atoms/product-title/title.styl"
-$width-product-card = 400px
-$padding-card = 20px
-
-.product-card
-  width $width-product-card
-  border 1px solid blue
-  product-image($width-product-card, $padding-card)
-  product-title($width-product-card, $padding-card)
-  product-description($width-product-card, $padding-card)
-  product-price($width-product-card, $padding-card)
-  .content-product-buttom
-    padding $padding-card
-    product-buttom(red, white)
+//$width-product-card = 250px
+//$padding-card = 10px
+product-card($width-product-card, $padding-card)
+  .product-card
+    width 0.3*$width-product-card
+    //border 1px solid lightgray
+    margin 30px 0
+    product-image($width-product-card, $padding-card)
+    product-title($width-product-card, $padding-card)
+    product-description($width-product-card, $padding-card)
+    product-price($width-product-card, $padding-card)
+    .content-product-buttom
+      padding 2*$padding-card
+      text-align center
+      product-buttom-red()
+      product-buttom-gray()

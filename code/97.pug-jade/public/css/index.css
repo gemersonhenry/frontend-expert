@@ -1,42 +1,94 @@
-.product-card {
-  width: 400px;
-  border: 1px solid #00f;
+body {
+  background: #d3d3d3;
 }
-.product-card span.product-image {
+.product-banner {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.product-banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+.title-list {
+  padding: 15px;
+  font-weight: bold;
+  color: #808080;
+  background-color: #fff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #eee;
+  border-bottom: 3px solid #808080;
+}
+.content-shopping {
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content-shopping .content-center {
+  width: 85%;
+  float: left;
+}
+.content-shopping .content-center .product-list {
+  background-color: #fff;
+  width: 100%;
   box-sizing: border-box;
-  width: 400px;
-  padding: 10px 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.product-card span.product-image img {
+.content-shopping .content-center .product-list .product-card {
+  width: 30%;
+  margin: 30px 0;
+}
+.content-shopping .content-center .product-list .product-card .product-image {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4px 8px;
+}
+.content-shopping .content-center .product-list .product-card .product-image img {
   width: 100%;
 }
-.product-card .product-title {
+.content-shopping .content-center .product-list .product-card .product-title {
   box-sizing: border-box;
   width: 100%;
   font-weight: bold;
-  padding: 20px;
+  padding: 8px;
 }
-.product-card .product-description {
+.content-shopping .content-center .product-list .product-card .product-description {
   box-sizing: border-box;
   width: 100%;
   color: #808080;
-  padding: 20px;
+  padding: 8px;
 }
-.product-card .product-price {
+.content-shopping .content-center .product-list .product-card .product-price {
   box-sizing: border-box;
   width: 100%;
   font-weight: bold;
   color: #00f;
-  padding: 20px;
+  padding: 8px;
 }
-.product-card .content-product-buttom {
-  padding: 20px;
+.content-shopping .content-center .product-list .product-card .content-product-buttom {
+  padding: 16px;
+  text-align: center;
 }
-.product-card .content-product-buttom .js-product-title {
+.content-shopping .content-center .product-list .product-card .content-product-buttom .js-product-buttom-red {
   margin: 3px;
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
   background-color: #f00;
   padding: 8px 16px;
+}
+.content-shopping .content-center .product-list .product-card .content-product-buttom .js-product-buttom-gray {
+  margin: 3px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #808080;
+  padding: 8px 16px;
+}
+.content-shopping .content-right {
+  width: 15%;
+  float: left;
 }

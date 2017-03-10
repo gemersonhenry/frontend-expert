@@ -1,0 +1,15 @@
+include ../molecules/product-card/product-card.jade
+
+mixin product-banner(img_banner, alt_banner)
+  section.product-banner    
+      img(src="#{img_banner}", alt="#{alt_banner}")
+
+mixin panel-product-list(prices, num_articles)
+  section.content-list
+    .title-list
+      span icon
+      b FEATURED PRODUCTS
+    .product-list
+      - for( var i = 0; i < num_articles; i++ )
+        +product-card(prices[i])  
+  

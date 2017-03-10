@@ -1,8 +1,15 @@
 product-buttom($bg-color, $color)
-  .js-product-title
-    margin 3px
-    font-weight bold
-    color $color
-    border-radius 5px
-    background-color $bg-color
-    padding 8px 16px
+  margin 3px
+  font-weight bold
+  color $color
+  border-radius 5px
+  background-color $bg-color
+  padding 8px 16px
+
+product-buttom-red()
+  .js-product-buttom-red
+    product-buttom(red, white)
+
+product-buttom-gray()
+  .js-product-buttom-gray
+    product-buttom(gray, white)

@@ -1,1 +1,15 @@
-@import "organisms/molecules/product-card/product-card.styl"
+@import "organisms/product-list/product-list.styl"
+@import "organisms/special-list/special-list.styl"
+$max-width = 1080px
+
+.content-shopping
+  max-width $max-width
+  margin 0 auto
+  overflow hidden
+  .content-center
+    width 85%
+    float left
+    product-list(100%)
+  .content-right
+    width 15%
+    float left

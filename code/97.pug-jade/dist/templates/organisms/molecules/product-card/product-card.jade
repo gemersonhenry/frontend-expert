@@ -4,9 +4,13 @@ include ../atoms/product-image/image.jade
 include ../atoms/product-price/price.jade
 include ../atoms/product-title/title.jade
 
-section.product-card
-  +product-image('../images/bicicleta.jpg', 'BICICLETA')
-  +product-title('Bicicleta último modelo')
-  +product-description('Bicicleta importada recien llegada desde el extrangero')
-  +product-price('850.00')
-  +product-buttom('Add to Cart')
+mixin product-card(price)
+  // Product Card: card completa de un producto
+  article.product-card
+    +product-image('../images/bicicleta.jpg', 'BICICLETA')
+    +product-title('Bicicleta último modelo')
+    +product-description('Bicicleta importada recien llegada desde el extrangero, en buen estadó y con la garantia del caso')
+    +product-price(price)
+    .content-product-buttom
+      +product-buttom-red('Add to Cart')
+      +product-buttom-gray('View')
