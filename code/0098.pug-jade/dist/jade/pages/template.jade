@@ -1,0 +1,19 @@
+- var numbers_of_users = 10
+
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Primera aplicación con Jade y Stylus
+    link(rel="stylesheet", href="../css/main.css")
+  body
+    section.card-users
+      - for (var i = 0; i < numbers_of_users; i++)
+        article.card-user
+          div.card-user-top
+            div.card-user-image
+          div.card-user-content
+            span.card-user-nombre Gemerson Henry
+            span.card-user-job FRONT END DEVELOPER
+            span.card-user-country PERÚ
+            span.card-user-home HOME
