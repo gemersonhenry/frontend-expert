@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var plumber = require('gulp-plumber');
+var uglify = require('gulp-uglify');
+var uglifycss = require('gulp-uglifycss');
 
 gulp.task('default', ['jade', 'stylus']);
 
