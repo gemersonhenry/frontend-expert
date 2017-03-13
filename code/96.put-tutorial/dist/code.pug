@@ -1,0 +1,46 @@
+include generics/data-template.pug
+include generics/header.pug
+
+
+// Loops: se pueden realizar con arreglos u objetos
+- var users = [{nombre:'henry', apellido:'bendezu', dni:43726306}, {nombre:'mabel', apellido:'diaz', dni:450692222}]
+
+- for(var i=0; i<users.length; i++)
+  div #{users[i]['nombre']} #{users[i]['apellido']} - #{users[i]['dni']}
+
+each user in users
+  div #{user['nombre']} #{user['apellido']} - #{user['dni']}
+
+for user in users
+  div #{user['nombre']} #{user['apellido']} - #{user['dni']}
+
+
+// caracteres especiales
+p
+  | Saludando <escaped> { Hola Mundo!!! } < > $ / <script>alert('hola')</script>
+p
+  = 'Saludando <escaped> { Hola Mundo!!! } < > $ / <script>HOLA</script> '
+  = 'Nuevamente otro saludo'
+p
+  != 'Saludando <escaped> { Hola Mundo!!! } < > $ / <script>alert("hola")</script>'
+
+
+include generics/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//**********************************************************

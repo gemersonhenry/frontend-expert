@@ -1,0 +1,17 @@
+include ../generics/data-template.pug
+include ../generics/header.pug
+
+header
+  h1 título de la página
+  nav menú de navegación
+section
+  section
+    // inicio del blocke "container"
+    block container
+    // fin del blocke "container"
+  aside
+    // inicio del bloque "container-right"
+    block container_right
+    // fin del bloque "container-right"
+
+include ../generics/footer.pug

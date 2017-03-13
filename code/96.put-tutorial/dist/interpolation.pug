@@ -1,0 +1,19 @@
+include generics/data-template.pug
+include generics/header.pug
+
+
+// aplicando conceptos de interpolación
+- var title = "On Dogs: Man's Best Friend";
+- var author = "enlore";
+- var theGreat = "<span>escape!</span>";
+
+h1= title
+p Written with love by #{author}
+p This will be safe: #{theGreat}
+p title in Upper Case: #{title.toUpperCase()}
+
+p
+  | Esto comprando productos del supermercado #[strong a bajo precio]
+
+
+include generics/footer.pug
