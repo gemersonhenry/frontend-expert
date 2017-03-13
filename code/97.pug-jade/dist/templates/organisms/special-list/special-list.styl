@@ -1,0 +1,23 @@
+@import "../molecules/product-special/product-special.styl"
+
+.title-list
+  padding 15px
+  font-weight bold
+  color gray
+  background-color white
+  border-top-left-radius 7px
+  border-top-right-radius 7px
+  background-color #eee
+  border-bottom 3px solid gray
+
+product-special($width-list-card)
+  .product-list
+    background-color white
+    width $width-list-card // puede ser valor o porcentaje
+    box-sizing border-box
+    padding 10px
+    //border 1px solid black
+    display flex
+    flex-wrap wrap
+    justify-content space-around
+    product-card-s(100%, 8px)

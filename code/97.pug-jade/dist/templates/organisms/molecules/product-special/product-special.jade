@@ -1,0 +1,11 @@
+include ../atoms/product-image/image.jade
+include ../atoms/product-price/price.jade
+include ../atoms/product-title/title.jade
+
+mixin product-special(price)
+  // Product Card: card completa de un producto
+  article.product-card
+    +product-image('../images/bicicleta.jpg', 'BICICLETA')
+    +product-title('Bicicleta último modelo')
+    +product-price(price)
+    

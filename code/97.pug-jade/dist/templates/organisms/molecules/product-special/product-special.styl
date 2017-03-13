@@ -1,0 +1,14 @@
+@import "../atoms/product-image/image.styl"
+@import "../atoms/product-price/price.styl"
+@import "../atoms/product-title/title.styl"
+
+product-card-s($width-product-card, $padding-card)
+  .product-card
+    width $width-product-card
+    margin 10px 0
+    border-bottom 1px dashed black
+    product-image($width-product-card, $padding-card)
+    product-title($width-product-card, $padding-card)
+    product-price($width-product-card, $padding-card)
+  .product-card:last-child
+    border-bottom none

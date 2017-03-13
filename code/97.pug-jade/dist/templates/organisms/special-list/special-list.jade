@@ -1,0 +1,10 @@
+include ../molecules/product-special/product-special.jade
+
+mixin panel-product-special(prices, num_articles)
+  section.content-list
+    .title-list
+      span icon
+      b FEATURED PRODUCTS
+    .product-list
+      - for( var i = 0; i < num_articles; i++ )
+        +product-special(prices[i])
